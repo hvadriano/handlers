@@ -1,0 +1,19 @@
+configs:
+  validation:
+    statuses:
+      activated: [ACTIVE, LATE]
+      inactivated: [CANCELED]
+    minimum-age-handler:
+      products:
+        PRODUCT_A: 18
+        PRODUCT_B: 18
+    maximum-age-handler:
+      products:
+        PRODUCT_A: 70
+    category-handler:
+      products:
+        PRODUCT_A: [CATEGORY_A]
+        PRODUCT_B: [CATEGORY_A, CATEGORY_B]
+    custom-handler:
+      products:
+        [PRODUCT_A]
